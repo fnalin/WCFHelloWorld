@@ -3,7 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFHelloWorld.Core", "WCFHelloWorld.Core\WCFHelloWorld.Core.csproj", "{50CF755A-4EDD-41E7-A399-9A90A1FAD532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFHelloWorld.Client", "WCFHelloWorld.Client\WCFHelloWorld.Client.csproj", "{A5CBBA35-15CF-4F3D-9995-639FC12510CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50CF755A-4EDD-41E7-A399-9A90A1FAD532} = {50CF755A-4EDD-41E7-A399-9A90A1FAD532}
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50CF755A-4EDD-41E7-A399-9A90A1FAD532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CF755A-4EDD-41E7-A399-9A90A1FAD532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CF755A-4EDD-41E7-A399-9A90A1FAD532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CF755A-4EDD-41E7-A399-9A90A1FAD532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5CBBA35-15CF-4F3D-9995-639FC12510CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5CBBA35-15CF-4F3D-9995-639FC12510CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5CBBA35-15CF-4F3D-9995-639FC12510CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5CBBA35-15CF-4F3D-9995-639FC12510CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
